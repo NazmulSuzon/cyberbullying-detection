@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.env
+venv/
+env/
+
+# Django
+*.log
+
+# Node
+node_modules/
+cyberbully-frontend/build/
