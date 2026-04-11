@@ -17,7 +17,7 @@ import {
   FiInfo,
 } from "react-icons/fi";
 
-const API_URL = "http://127.0.0.1:8000/api/detect/";
+const API_URL = "https://cyberbullying-detection-1-wx5d.onrender.com/api/detect/";
 
 const SAMPLE_POSTS = [
   "You're such a loser, everyone hates you.",
