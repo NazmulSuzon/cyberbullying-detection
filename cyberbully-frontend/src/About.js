@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Container, Card, Button, Badge, Row, Col } from "react-bootstrap";
-import { FiShield, FiChevronDown, FiChevronUp, FiCopy, FiCheck } from "react-icons/fi";
+import { FiShield, FiChevronDown, FiChevronUp, FiCopy, FiCheck, FiGithub } from "react-icons/fi";
 
 const COLAB_SECTIONS = [
   {
@@ -159,9 +159,22 @@ export default function About() {
               <FiShield size={20} color="#0d6efd" />
               <span style={{ fontSize: 17, fontWeight: 700, color: "#212529" }}>Safeguard</span>
             </div>
-            <Button variant="outline-secondary" size="sm" onClick={() => navigate("/")}>
-              ← Back to App
-            </Button>
+            <div className="d-flex gap-2">
+              <Button
+                variant="outline-secondary"
+                size="sm"
+                href="https://github.com/NazmulSuzon/cyberbullying-detection"
+                target="_blank"
+                rel="noopener noreferrer"
+                as="a"
+              >
+                <FiGithub size={14} className="me-1" />
+                Source Code
+              </Button>
+              <Button variant="outline-secondary" size="sm" onClick={() => navigate("/")}>
+                ← Back to App
+              </Button>
+            </div>
           </div>
         </Container>
       </div>

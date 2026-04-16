@@ -15,6 +15,7 @@ import {
   FiAlertTriangle,
   FiCheckCircle,
   FiInfo,
+  FiGithub,
 } from "react-icons/fi";
 
 const API_URL = "https://cyberbullying-detection-1-wx5d.onrender.com/api/detect/";
@@ -165,13 +166,26 @@ export default function MainApp() {
                 SVM · 86.5%
               </Badge>
             </div>
-            <Button
-              variant="outline-secondary"
-              size="sm"
-              onClick={() => navigate("/about")}
-            >
-              About / Research
-            </Button>
+            <div className="d-flex gap-2">
+              <Button
+                variant="outline-secondary"
+                size="sm"
+                href="https://github.com/NazmulSuzon/cyberbullying-detection"
+                target="_blank"
+                rel="noopener noreferrer"
+                as="a"
+              >
+                <FiGithub size={14} className="me-1" />
+                Source Code
+              </Button>
+              <Button
+                variant="outline-secondary"
+                size="sm"
+                onClick={() => navigate("/about")}
+              >
+                About / Research
+              </Button>
+            </div>
           </div>
         </Container>
       </div>
