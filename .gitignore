@@ -12,6 +12,3 @@ env/
 # Node
 node_modules/
 cyberbully-frontend/build/
-
-
-echo ".claude/" >> .gitignore
