@@ -22,7 +22,7 @@ export default function NavBar() {
             <div className="d-flex align-items-center gap-2">
               <FiShield size={22} color="#0d6efd" />
               <span style={{ fontSize: 18, fontWeight: 700, color: "#212529" }}>
-                Safeguard
+                SafeGuard
               </span>
               <Badge bg="primary" style={{ fontSize: 11, fontWeight: 400 }}>
                 SVM · 86.5%
